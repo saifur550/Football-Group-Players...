@@ -1,0 +1,256 @@
+/* ========================== 
+        Google fonts 
+============================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800&display=swap');
+
+/* ========================== 
+    variables
+============================ */
+:root{
+
+    /* ---fonts variable---- */
+    --mainFont :'Montserrat', sans-serif;
+    --fontBold:700;
+    --fontSemi:600;
+    --fontMedium:500;
+    --fontRegular:400;
+    --fontLight:300;
+    
+
+    /* ---color variable---- */
+    --bannerColor:#2D25A0;
+    --loginColor:#E02C6D;
+
+
+
+    
+}
+
+
+/* ========================== 
+      Reset CSS
+============================ */
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+   box-sizing: border-box;
+    flex: 0 0 auto;
+    
+}
+
+
+
+
+
+/* ========================== 
+     Global CSS
+============================ */
+
+
+a,
+a:hover{
+     text-decoration: none;
+}
+
+
+
+li{
+    list-style: none;
+}
+
+ul{
+    display: flex;
+}
+
+img{
+     max-width: 100%;
+}
+
+
+
+body{
+    font-family:var(--mainFont);
+}
+
+
+
+/* ========================== 
+     Reusable CSS
+============================ */
+
+
+.container{
+     max-width: 1160px;
+     margin: 0 auto;
+}
+
+
+.flex{
+     display: flex;
+     flex-wrap: wrap;
+}
+
+.justify-content{
+     justify-content:space-between;
+}
+
+
+.align-item{
+     align-items: center;
+}
+
+
+
+
+.grid{
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     
+}
+
+
+.p-y{
+     padding-top: 2rem;
+     padding-bottom: 2rem;
+}
+
+
+/* ========================== 
+    Banner section style
+============================ */
+
+#banner-section{
+     background-color: var(--bannerColor);
+     color: #fff;
+     padding-bottom: 3rem;
+     height: 677px;
+}
+
+#banner-section header{
+     padding-top: 2rem;
+}
+
+
+#banner-section nav ul li a{
+     color: #fff;
+     display: inline-block;
+     padding: 1rem 1rem;
+     font-size: 1rem;
+}
+
+
+#banner-section .login a{
+     color: #fff;
+     background-color: var(--loginColor);
+     display: flex;
+     font-size: 1rem;
+     width: 123px;
+     height: 44px;
+     line-height: 44px;
+     justify-content: center;
+    
+}
+
+#banner-section .login a img{
+    margin-right: 0.3rem;
+    width: 20%;
+    
+}
+
+
+#banner-section .banner-content {
+	width: 485px;
+	height: 230px;
+	
+}
+
+#banner-section .banner-content .btn-watch {
+     background-color: var(--loginColor);
+     display: flex;
+     align-items: center;
+     width: 168px;
+     height: 44px;
+     justify-content: center;
+     margin-top: 20px;
+     color: #fff;
+     overflow: hidden;
+}
+#banner-section .banner-content .btn-watch:hover {
+
+   background-color: #ffc400;
+   color: #000;
+   transform: scale(1.2);
+   transition:transform 0.5s ease-in-out ;
+}
+
+
+#banner-section .banner-content .btn-watch img {
+     margin-left: 10px;    
+}
+
+#banner-section .banner-content h2{
+     font-size: 64px;
+}
+
+#banner-section .banner-img{
+     width: 50%;
+}
+
+#banner-section .banner-img img{
+     width: 100%;
+}
+
+
+/* ========================== 
+     Player  section style
+============================ */
+#player-section .player-details img{
+     width: 300px;
+     height: 256px;
+     object-fit: cover;
+}
+
+/* ========================== 
+     ---- section style
+============================ */
+
+
+/* ========================== 
+     ---- section style
+============================ */
+
+
+/* ========================== 
+     ---- section style
+============================ */
+
+
+
+/* ========================== 
+     ---- section style
+============================ */
+
+
+
+
+/* ========================== 
+     ---- section style
+============================ */
+
+
+
+
+/* ========================== 
+     ---- section style
+============================ */
+
+
+
+
+/* ========================== 
+     ---- section style
+============================ */
