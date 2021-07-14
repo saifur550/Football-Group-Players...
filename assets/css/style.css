@@ -340,8 +340,10 @@ body{
 /* ========================== 
      sponsor section style
 ============================ */
+
 #sponsor-section{
-     padding: 2rem;
+     padding-top: 3rem;
+     padding-bottom: 5rem;
      background-color:#293B5F ;
 }
 
