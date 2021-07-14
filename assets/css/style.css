@@ -146,15 +146,22 @@ body{
 }
 
 
+#banner-section .login {
+	
+	width: 123px;
+	height: 44px;
+	
+} 
+
 #banner-section .login a{
      color: #fff;
      background-color: var(--loginColor);
-     display: flex;
      font-size: 1rem;
-     width: 123px;
-     height: 44px;
-     line-height: 44px;
+     padding: 10px 20px;
+     align-items: center;
+     display: flex;
      justify-content: center;
+    
     
 }
 
@@ -182,6 +189,7 @@ body{
      color: #fff;
      overflow: hidden;
 }
+
 #banner-section .banner-content .btn-watch:hover {
 
    background-color: #ffc400;
@@ -221,6 +229,7 @@ body{
 	height: 474px;
 	text-align: center;
 	box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.055);
+     border-radius: 5px;
 }
 
 
@@ -229,6 +238,7 @@ body{
      height: 256px;
      object-fit: cover;
      padding: 10px;
+     border-radius: 15px;
 }
 
 #player-section .player-info{
