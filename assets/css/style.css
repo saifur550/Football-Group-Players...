@@ -42,7 +42,9 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-     flex: 0 0 auto;
+     -webkit-box-flex: 0;
+     -ms-flex: 0 0 auto;
+         flex: 0 0 auto;
 }
 
 
@@ -116,6 +118,7 @@ body{
      
      
 }
+
  .col-1-3 {
 	width: 330px;
 	height: 474px;
@@ -131,6 +134,21 @@ body{
 }
 
 
+.heading-content{
+     text-transform: capitalize;
+     color: #2D25A0;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     margin-bottom: 30px;
+     font-size: 2rem;
+    
+}
+
+
+
 /* ========================== 
     Banner section style
 ============================ */
@@ -139,11 +157,11 @@ body{
      background-color: var(--bannerColor);
      color: #fff;
      padding-bottom: 3rem;
-     height: 677px;
+     
 }
 
 #banner-section header{
-     padding-top: 2rem;
+     padding: 20px 0;
 }
 
 
@@ -181,11 +199,6 @@ body{
 }
 
 
-#banner-section .banner-content {
-	width: 485px;
-	height: 230px;
-	
-}
 
 #banner-section .banner-content .btn-watch {
      background-color: var(--loginColor);
@@ -216,12 +229,13 @@ body{
      font-size: 64px;
 }
 
-#banner-section .banner-img{
-     width: 50%;
+#banner-section .banner-img {
+	width: 50%;
 }
 
-#banner-section .banner-img img{
-     width: 100%;
+
+#banner-section .banner-img img {
+	width: 80%;
 }
 
 
@@ -272,19 +286,11 @@ body{
 ============================ */
 #top-news{
      padding-top: 2rem;
+     padding-bottom: 2rem;
 }
-#top-news h3{
-     text-transform: capitalize;
-     color: #2D25A0;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     padding-top: 10px;
-     padding-bottom: 10px;
-     margin-bottom: 30px;
-     font-size: 2rem;
-    
-}
+
+
+
 
 
 #top-news .news-content-img img {
@@ -332,37 +338,211 @@ body{
 
 
 /* ========================== 
-     ---- section style
+     sponsor section style
+============================ */
+#sponsor-section{
+     padding: 2rem;
+     background-color:#293B5F ;
+}
+
+
+#sponsor-section .sponsor-heading{
+     color: #fff;
+     text-transform: capitalize;
+}
+
+
+#sponsor-section .grid-content{
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+     place-items: center;
+     gap: 15px;
+}
+
+
+#sponsor-section .grid-content img{
+     width: 200px;
+     height: 100px;
+     object-fit: cover;
+     
+}
+
+/* ========================== 
+    Footer section style
+============================ */
+#footer-section{
+     padding-top: 2rem;
+     text-align: center;
+}
+
+#footer-section .footer-img{
+     text-align: center;
+  }
+
+#footer-section .footer-img img{
+    width: 483px;
+    height: 110px;
+    padding: 20px;
+}
+
+
+#footer-section .social-links {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+#footer-section .social-links li {
+	margin: 0px 5px;
+}
+
+
+#footer-section .social-links  a {
+	display: inline-block;
+     width: 32px;
+     height: 32px;
+     margin-bottom: 1rem;
+}
+
+
+
+#footer-section .copyright  {
+	padding-bottom: 2rem;
+}
+
+
+
+
+/* ========================== 
+ Responsive  Media Queries
 ============================ */
 
 
 /* ========================== 
-     ---- section style
+ tab,ipad devices  Media Queries
 ============================ */
 
+
+@media only screen and (max-width: 768px) {
+
+     .container{
+          max-width: 90%;
+     }
+
+
+     .flex{
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          align-items: flex-start;
+     }
+
+       
+    .grid{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     place-items: center;
+     gap: 20px;
+ 
+    }
+
+
+
+     #banner-section .login{
+          display: none;
+     }
+
+
+     #banner-section .banner-content h2{
+          font-size: 50px;
+     }
+
+
+
+     #banner-section .banner-img {
+          width: 100%;
+          margin-top: 30px;
+     }
+
+     
+     #banner-section .banner-img img {
+	     width: 50%;
+     }
+
+     
+  
+
+    #sponsor-section .grid-content{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     place-items: center;
+     gap: 15px;
+
+     }
+     
+   }
 
 
 /* ========================== 
-     ---- section style
+ Mobile devices   Media Queries
 ============================ */
 
 
 
+@media only screen and (max-width: 481px) {
 
-/* ========================== 
-     ---- section style
-============================ */
-
-
-
-
-/* ========================== 
-     ---- section style
-============================ */
+     .container{
+          max-width: 95%;
+     }
 
 
+     .flex{
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          align-items: flex-start;
+     }
+
+       
+     .grid{
+     display: grid;
+     grid-template-columns: repeat(1,1fr);
+     place-items: center;
+     gap: 20px;
+ 
+    }
 
 
-/* ========================== 
-     ---- section style
-============================ */
+
+     #banner-section nav {
+          display: none;
+     }
+
+
+     #banner-section .banner-content h2{
+          font-size: 36px;
+     }
+
+
+
+     #banner-section .banner-img {
+          width: 100%;
+          margin-top: 30px;
+     }
+
+     
+     #banner-section .banner-img img {
+	     width: 100%;
+     }
+
+     
+  
+
+     #sponsor-section .grid-content{
+     display: grid;
+     grid-template-columns: repeat(1,1fr);
+     place-items: center;
+     gap: 15px;
+
+     }
+     
+   }
